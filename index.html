@@ -11,11 +11,15 @@
 </head>
 
 <body>
+    <div class="container">
     <div class="user">
-        <img src="/images/download.png" alt="testbook" style="width: 15%; margin: 2vw auto;">
+        <img src="images.jpg" alt="testbook" style="width: 15%; margin: 2vw auto;">
         <h1>Enter Your Name To Continew The Quiz !</h1>
-        <input type="text" name="name" id="playername" placeholder="Enter your name...">
+
+        <input type="text" name="name" id="username" placeholder="Enter your name...">
         <button type="submit" onclick="{EnterName();}">Enter</button>
+        
+        <span>You'll have 10 seconds to answer each questions </span>
     </div>
     <hr>
     <div class="catg">
@@ -39,7 +43,7 @@
         <script>
             function EnterName() {
 
-                let name = document.getElementById("playername").value;
+                let name = document.getElementById("username").value;
                 console.log(name);
                 localStorage.setItem('name', name)
                 
@@ -49,6 +53,7 @@
         </script>
 
     </div>
+</div>
 </body>
 
 </html>

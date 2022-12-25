@@ -111,13 +111,12 @@ function checkans(SelectedOption){
     if(SelectedOption.innerHTML == data[index].ans){
         SelectedOption.style.backgroundColor = "green";
         right++;
-        score = score + 10;
+        score = score + 1;
         document.getElementById("sco").innerHTML = score;
     }
     else{    
         SelectedOption.style.backgroundColor = "red";
         wrong++;
-        score = score - 5 ;   
         document.getElementById("sco").innerHTML = score;
     }
     for(i=0;i<respose.length;i++){

@@ -78,7 +78,7 @@ function EndGame(){
     document.getElementById("ques").style.display = "none";
     document.getElementById("result").style.display = "block";
     
-    document.getElementById("nam").innerHTML = name;
+    document.getElementById("name").innerHTML = name;
     document.getElementById("Corr").innerHTML = right;
     document.getElementById("Wrong").innerHTML = wrong;
     document.getElementById("skiped").innerHTML = 10 - right - wrong;

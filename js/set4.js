@@ -111,13 +111,13 @@ function checkans(SelectedOption){
     if(SelectedOption.innerHTML == data[index].ans){
         SelectedOption.style.backgroundColor = "green";
         right++;
-        score = score + 10;
+        score = score + 1;
         document.getElementById("sco").innerHTML = score;
     }
     else{    
         SelectedOption.style.backgroundColor = "red";
         wrong++;
-        score = score - 5 ;   
+        score = score - 0 ;   
         document.getElementById("sco").innerHTML = score;
     }
     for(i=0;i<respose.length;i++){
@@ -169,5 +169,5 @@ function EndGame(){
     document.getElementById("Wrong").innerHTML = wrong;
     document.getElementById("skiped").innerHTML = 10 - right - wrong;
     document.getElementById("TimeTaken").innerHTML = 300 - tim;
-    document.getElementById("scr").innerHTML = score ;
+    document.getElementById("scr").innerHTML = 10% score ;
 }
