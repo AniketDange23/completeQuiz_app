@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/quiz.css">
+    <title>Quiz-Problems on Age</title>
+</head>
+
+<body><div class="container">
+    <header>
+        <div class="timer">
+            <p id="time">300</p>
+        </div>
+        <div class="heading">
+            <h1>Problems on Age</h1>
+        </div>
+        <div class="score">
+            <p>Score : <span id="sco">0</span> </p>
+        </div>
+
+    </header>
+    <main>
+        <div id="start">
+            <p>You have 5 minutes or 300 seconds for 10 Qusention.</p>
+            <p>You get 10 points for each right answer.</p>
+            <p>And 5 points is deducted for each wrong answer.</p>
+            <button class="tt" onclick="StartGame()">Start Game</button>
+        </div>
+        <div id="ques">
+            <div class="quesNo">
+                <p> <span id ="questionNo">1</span>/10</p>
+            </div>
+            <div class="Question">
+                <p id = "questionbox">
+                    
+                </p>
+            </div>
+            <hr>
+            <div class="option">
+                <div class="opt" id = "opt1" onclick="checkans(document.getElementById('opt1'))">
+                    
+                </div>
+                <div class="opt" id = "opt2" onclick="checkans(document.getElementById('opt2'))">
+                    
+                </div>
+                <div class="opt" id = "opt3" onclick="checkans(document.getElementById('opt3'))">
+                    
+                </div>
+                <div class="opt" id = "opt4" onclick="checkans(document.getElementById('opt4'))">
+                    
+                </div>
+            </div>
+            <div  id="btn" onclick="NextQution()">
+                Next Question
+            </div>
+        </div>
+        <div id="result">
+            <h1>Result</h1>
+            <p>userName : <span id="nam"></span> </p>
+            <p>Total Question : <span  id ="totalQue" >10</span></p>
+            <p> Correct Answer : <span  id ="Corr"></span> </p>
+            <p> Wrong Answer : <span  id ="Wrong"></span></p>
+            <p> Skiped Question : <span  id ="skiped"></span> </p>
+            <p> Time Taken : <span  id ="TimeTaken"></span> second</p>
+            <p>Score : <span id="scr"></span></p>
+            <a href="/index.html"><button style="padding: 1vw 2vw; margin: 1vw auto;">Home</button></a>
+        </div>
+    </main>
+</div>
+    <script src="/js/set3.js"></script>
+</body>
+
+</html>
